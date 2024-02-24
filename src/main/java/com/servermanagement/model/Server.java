@@ -16,7 +16,7 @@ import org.hibernate.annotations.Columns;
 public class Server {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     @Column(unique = true)
     @NotEmpty(message = "Ip address cannot be empty or null")
     private String ipAddress;
